@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Source+Code+Pro:wght@200;300;400;500&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+.game-container{
+    background-color: #43a047;
+    width: 100vw;
+    height: 100vh;
+    color: #ffffffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-family: 'Fredoka One', cursive;
+    margin:0 auto;
+}
+
+p{
+    font-family: 'PT sans', sans-serif;
+    padding: 10px 20px;
+}
+
+.help{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #ffffff33;
+    border-bottom: #ffffffcc solid 1px;
+}
+
+.app{
+    display: flex;
+}
+
+
+#instructions{
+    padding: 30px 60px;
+    width: 50%;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.editor{
+    position: relative;
+    background-color: #e0e0e0;
+    height: 260px;
+    padding:10px 10px 10px 40px;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777777;
+    overflow: hidden;
+}
+
+.line-numbers{
+    position: absolute;
+    background-color: #999999;
+    color: #d5d5d5;
+    padding: 10px 6px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: right;
+}
+
+pre{
+    margin: 0;
+}
+
+textarea{
+    height: 44px;
+    border: none;
+    outline: none;
+    resize: none;
+    overflow: auto;
+    margin-left: 26px;
+    width: 88%;
+}
+
+button{
+    background-color: #d11606;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ffffff;
+    padding: 5px 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #b91506;
+    color: #fde3e3;
+}
+
+button:active{
+    background-color: #7e0f05;
+    color: #ffffff;
+}
+
+#pond{
+    position: relative;
+    background-color: #1f5768;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 30px ;
+    overflow: hidden;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#forefront{
+position: absolute;
+left: 0;
+top: 0;
+width: 95%;
+height: 95%;
+padding: 2.5%;
+display: flex;
+z-index: 100;
+}
+
+#background{
+position: absolute;
+left: 0;
+top: 0;
+width: 95%;
+height: 95%;
+padding: 2.5%;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+.lily-container, .frog-container{
+    width: 20%;
+    height: 20%;
+}
+
+.lily, .frog{
+    width: 100%;
+    height: 100%;
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.lily.green{
+    background-image: url('images/lilypad-green.svg');
+}
+
+.lily.red{
+    background-image: url('images/lilypad-red.svg');
+}
+
+.lily.yellow{
+    background-image: url('images/lilypad-yellow.svg');
+}
+
+.frog.green{
+    background-image: url('images/frog-green.svg');
+}
+.frog.red{
+    background-image: url('images/frog-red.svg');
+}
+.frog.yellow{
+    background-image: url('images/frog-yellow.svg');
+}
